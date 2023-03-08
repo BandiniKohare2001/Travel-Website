@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-links:hover {
+    height: 27px;
+    background-color: tomato;
+
+}
+
+.nav-links {
+
+    align-items: center;
+
+    display: inline-block;
+    margin: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links li {
+    text-decoration: none;
+    color: #fff;
+}
+
+.register-btn:hover {
+    height: 40px;
+    width: 155px;
+    background-color: skyblue;
+}
+
+.register-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
