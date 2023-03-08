@@ -201,3 +201,310 @@ nav {
     height: 145px;
     width: 100%;
 }
+/*-------------------call to action-----------*/
+.cta {
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+.cta h3 {
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.cta p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn {
+    background: #ff5361;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/*----------------traveller stories------------------*/
+.stories {
+    height: 500px;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stories div img {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+
+    padding-bottom: 10px;
+}
+
+.stories div {
+    position: relative;
+    text-align: center;
+}
+
+.stories p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font: bold;
+}
+
+/*-------------travel-img------------------*/
+.travel-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: 40px;
+    background-color: rgb(219, 239, 239);
+    margin-bottom: 20px;
+
+}
+
+.travel-img:hover {
+    height: 255px;
+    width: 520px;
+    border-color: #4612a8;
+}
+
+.travel-img {
+    height: 250px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    border-style: groove;
+    margin-left: 30px;
+}
+
+.msg {
+    text-align: center;
+    margin: 80px 0;
+    margin-top: 90px;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.explore-btn:hover {
+    height: 43px;
+    width: 203px;
+}
+
+.explore-btn {
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 40px;
+    border-style: hidden;
+    background-color: #891010;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*--------footer-----------*/
+
+.footer {
+
+    margin: 80px 0 10px;
+    text-align: center;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(145, 133, 133);
+    font-size: 23px;
+    margin: 0 10px;
+
+}
+
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer p{
+    padding-bottom: 15px;
+}
+
+/*--menu added---*/
+.active {
+    position: relative;
+    text-decoration: none;
+}
+
+.active::after {
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+nav .fa-bars{
+    display: none;
+}
+
+/*-- for small screen devices--*/
+@media only screen and (max-width: 700px) {
+    .logo{
+        position: fixed;
+        left: 5%;
+        height: 45px;
+        width: 60px;
+        margin-bottom: 7px;
+    }
+
+    nav{
+        position: fixed;
+        height: 80px;
+        z-index: 100;
+        display: inline-block;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+       
+    }
+
+   nav .nav-links p{
+    margin: 10px 0;
+    display: block;
+   }
+
+    .register-btn{
+        display: inline-block;
+        margin: 15px 0 30px;
+    }
+
+    nav .fa-bars{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #fff;
+        font-size: 28px;
+    }
+
+    .active::after{
+        left: -40%;
+        transform: translate(0, 50%);
+        bottom: 50%px;
+    }
+    .hidemenu{
+        max-height: 300px;
+    }
+    .header h1{
+        padding-top: 200px;
+        font-size: 7vw;
+    }
+    .search-bar{
+        position: relative;
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+    }
+    .searchbar form{
+        display: block;
+    }
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .subtitle{
+        font-size: 6vw;
+    }
+    .cta {
+        padding: 15% 5%;
+    }
+    .cta h3{
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+    .cta p{
+        font-size: 14px;
+    }
+    .cta-btn{
+        padding: 6px 15px;
+        margin-top: 10px ;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    .stories {
+        height: 1550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .msg{
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .travel-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(219, 239, 239);
+       height: 580px;
+    }
+    .travel-img:hover{
+        height: 300px;
+        width: 260px;
+    }
+    .travel-img {
+      
+        width: 250px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: groove;
+       margin-bottom: 60px;
+    }
+    .explore-btn{
+        margin-bottom: 0%;
+    }
+    
+    
+}
