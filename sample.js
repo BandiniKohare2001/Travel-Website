@@ -7,8 +7,7 @@ const object = [{
         rating : "4.5"
     }],
     CSS:[{
-        experiance: "1 year",
-        rating : "4.5"
+        experiance: "1 year"
     }]
 }
        ],
